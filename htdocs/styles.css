@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("lawn.jpg");
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.65); 
+    padding: 20px;
+    border-radius: 24px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+h1 {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+p {
+    color: white;
+}
+
+h1 img {
+    width: 32px; 
+    height: 32px;
+    margin-right: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+select {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    background-color: transparent;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus,
+select:focus {
+    border-color: #ffffff;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="file"]::placeholder,
+select::placeholder {
+    color: white;
+}
+
+button,
+.file-upload-button {
+    margin: 10px 0;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50; 
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover,
+.file-upload-button:hover {
+    background-color: rgba(89, 136, 57, 0.978);
+}
+
+.file-upload-button input[type=file] {
+    position: absolute;
+    font-size: 100px;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+
+.file-upload-button img {
+    width: 32px; 
+    height: 32px;
+    margin-right: 10px; 
+}
